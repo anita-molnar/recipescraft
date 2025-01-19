@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Showcase</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Recipe Showcase</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recipes">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#addRecipe">Add Recipe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <!-- Dark Mode and Light Mode Buttons -->
+        <div class="container py-3">
+          <div class="d-flex justify-content-start">
+            <!-- Dark Mode and Light Mode Buttons -->
+            <button id="darkModeButton" class="btn btn-outline-dark me-2">
+              Dark Mode
+            </button>
+            <button id="lightModeButton" class="btn btn-outline-dark me-2">
+              Light Mode
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="carouselCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Welcome Message (1st slide) -->
+            <div class="carousel-item active">
+              <div
+                class="d-flex justify-content-center align-items-center"
+                style="height: 400px; background-color: #dadde0"
+              >
+                <div class="container text-center d-flex align-items-center">
+                  <div class="col-md-6">
+                    <!-- Image in Welcome Message -->
+                    <img
+                      src="images/welcomepics.jpg"
+                      alt="Welcome Image"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <!-- Welcome Text -->
+                    <h2>Welcome to Recipes Craft!</h2>
+                    <p>
+                      Explore a wide variety of recipes to satisfy your
+                      cravings. Share your culinary creations and discover new
+                      dishes to try at home!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other slides -->
+            <div class="carousel-item" style="height: 400px">
+              <img
+                src="images/seafoodpasta_resize.jpg"
+                class="d-block w-100 h-100 object-fit-cover"
+                alt="Seafood pasta dish "
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Seafood Pasta</h3>
+                <p>Quick and delicious.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="height: 400px">
+              <img
+                src="images/salad_resize.jpg"
+                class="d-block w-100 h-100 object-fit-cover"
+                alt="Salad"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Refreshing Salad</h3>
+                <p>Fresh and light option for lunch.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="height: 400px">
+              <img
+                src="images/cake_resize.jpg"
+                class="d-block w-100 h-100 object-fit-cover"
+                alt="Cake"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Third slide label</h3>
+                <p>Sugar free, light and tasty.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel buttons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            id="carouselPrev"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            id="carouselNext"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Horizontal Bar with Meal Types -->
+        <div class="container mt-4">
+          <div class="d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Meal Types">
+              <button type="button" class="btn btn-outline-dark">All</button>
+              <button type="button" class="btn btn-outline-dark">Fish</button>
+              <button type="button" class="btn btn-outline-dark">Pasta</button>
+              <button type="button" class="btn btn-outline-dark">Pizza</button>
+              <button type="button" class="btn btn-outline-dark">Salad</button>
+              <button type="button" class="btn btn-outline-dark">
+                Dessert
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe Grid -->
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row g-4" id="recipeGrid">
+              <!-- Recipes will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Recipe Modal -->
+        <div
+          class="modal fade"
+          id="recipeModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Submit Your Recipe</h5>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#recipeModal"
+                >
+                  Add Recipe
+                </button>
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="recipeForm">
+                  <div class="mb-3">
+                    <label for="recipeName" class="form-label"
+                      >Recipe Name</label
+                    >
+                    <input
+                      type="text"
+                      id="recipeName"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipeGenre" class="form-label"
+                      >Food Genre</label
+                    >
+                    <select id="recipeGenre" class="form-select" required>
+                      <option value="">Choose...</option>
+                      <option value="Fish">Fish</option>
+                      <option value="Pasta">Pasta</option>
+                      <option value="Meat">Meat</option>
+                      <option value="Salad">Salad</option>
+                      <option value="Dessert">Dessert</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipeDescription" class="form-label"
+                      >Description</label
+                    >
+                    <textarea
+                      id="recipeDescription"
+                      class="form-control"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Submit Recipe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3 text-center">
+      <small
+        >&copy; 2025 Recipe Showcase. All Rights Reserved. Creator: Anita Molnar
+      </small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
