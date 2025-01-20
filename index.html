@@ -562,23 +562,54 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <form id="recipeForm">
+                <form id="recipeForm" action="https://formspree.io/f/mrbbnlpw" method="POST">
+
+                   <!-- Name Field -->
+               <div class="mb-3">
+                <label for="userName" class="form-label">Your Name</label>
+                <input
+                  name="userName"
+                  type="text"
+                  id="userName"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                 />
+                </div>
+
+                    <!-- Email Field -->
+                 <div class="mb-3">
+                  <label for="userEmail" class="form-label">Your Email</label>
+                  <input
+                    name="userEmail"
+                    type="email"
+                    id="userEmail"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                   required
+                  />
+                 </div>
+
+                  <!-- Recipe Name -->
                   <div class="mb-3">
                     <label for="recipeName" class="form-label"
                       >Recipe Name</label
                     >
                     <input
+                    name="recipeName"
                       type="text"
                       id="recipeName"
                       class="form-control"
                       required
                     />
                   </div>
+
+                  <!-- Recipe Type -->
                   <div class="mb-3">
-                    <label for="recipeGenre" class="form-label"
-                      >Food Genre</label
+                    <label for="recipeType" class="form-label"
+                      >Food Type</label
                     >
-                    <select id="recipeGenre" class="form-select" required>
+                    <select id="recipeType" name="recipeType" class="form-select" required>
                       <option value="">Choose...</option>
                       <option value="Fish">Fish</option>
                       <option value="Pasta">Pasta</option>
@@ -587,17 +618,22 @@
                       <option value="Dessert">Dessert</option>
                     </select>
                   </div>
+
+                  <!-- Recipe Description -->
                   <div class="mb-3">
                     <label for="recipeDescription" class="form-label"
                       >Description</label
                     >
                     <textarea
+                      name="recipeDescription"
                       id="recipeDescription"
                       class="form-control"
                       rows="3"
                       required
                     ></textarea>
                   </div>
+
+                  <!-- Submit Recipe -->
                   <button type="submit" class="btn btn-primary">
                     Submit Recipe
                   </button>
