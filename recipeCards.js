@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const category = card.getAttribute("data-category");
 
       if (filterValue === "All" || filterValue === category) {
-        card.style.display = "block"; // Show card
+        card.style.display = "flex"; // Show card
       } else {
         card.style.display = "none"; // Hide card
       }
