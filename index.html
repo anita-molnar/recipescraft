@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Showcase</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
     <style>
       /* div {
@@ -203,69 +201,84 @@
             <!-- Horizontal Filter Bar -->
             <nav class="text-center mb-4">
               <ul class="list-inline">
+
                 <li class="list-inline-item">
                   <button
+                    id="filter-all"
                     class="btn btn-outline-dark filter-btn"
                     data-filter="All"
                   >
                     All
                   </button>
                 </li>
+
                 <li class="list-inline-item">
                   <button
+                    id="filter-fish"
                     class="btn btn-outline-dark filter-btn"
                     data-filter="Fish"
                   >
                     Fish
                   </button>
                 </li>
+
                 <li class="list-inline-item">
                   <button
+                    id="filter-pasta"
                     class="btn btn-outline-dark filter-btn"
                     data-filter="Pasta"
                   >
                     Pasta
                   </button>
                 </li>
+
                 <li class="list-inline-item">
                   <button
+                    id="filter-pizza"
                     class="btn btn-outline-dark filter-btn"
                     data-filter="Pizza"
                   >
                     Pizza
                   </button>
                 </li>
+
                 <li class="list-inline-item">
                   <button
+                    id="filter-salad"
                     class="btn btn-outline-dark filter-btn"
                     data-filter="Salad"
                   >
                     Salad
                   </button>
                 </li>
+
                 <li class="list-inline-item">
                   <button
+                    id="filter-dessert"
                     class="btn btn-outline-dark filter-btn"
                     data-filter="Dessert"
                   >
                     Dessert
                   </button>
                 </li>
+
               </ul>
             </nav>
           </section>
 
           <!-- grid crads recipes -->
-          <div class="row g-4">
-            <div class="col col-lg-3">
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Pasta">
               <!-- card 1-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/pasta/bolognese.jpg"
                   class="card-img-top"
                   alt="Bolognese"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Spaghetti Bolognese</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -274,15 +287,16 @@
               </div>
               <!-- closed card 1-->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Dessert">
               <!-- card 2-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/cakes/tiramisu.jpg"
                   class="card-img-top"
                   alt="Tiramisu"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Tiramisu</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -291,15 +305,16 @@
               </div>
               <!-- closed card 2-->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Dessert">
               <!-- card 3-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/cakes/pannacotta.jpg"
                   class="card-img-top"
                   alt="Pannacota"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Panna Cotta</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -308,15 +323,16 @@
               </div>
               <!-- closed card 3 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Pizza">
               <!-- card 4-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/Pizza/pepperoni.jpg"
                   class="card-img-top"
                   alt="Pepperoni Pizza"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Pepperoni Pizza</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -325,15 +341,16 @@
               </div>
               <!-- closed card 4 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Fish">
               <!-- card 5-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/fish/shrimp.jpg"
                   class="card-img-top"
                   alt="Shrimp"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Shrimp</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -342,15 +359,16 @@
               </div>
               <!-- closed card 5 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Dessert">
               <!-- card 6-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/cakes/chocolatecake.jpg"
                   class="card-img-top"
                   alt="Chocolatecake"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Chocolate Cake</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -359,15 +377,16 @@
               </div>
               <!-- closed card 6 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Salad">
               <!-- card 7-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/salad/greek_.jpg"
                   class="card-img-top"
                   alt="Greek Salad"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Greek Salad</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -376,15 +395,16 @@
               </div>
               <!-- closed card 7 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Pasta">
               <!-- card 8-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/pasta/lasagna.jpg"
                   class="card-img-top"
                   alt="Lasagna"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Lasagna</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -393,15 +413,16 @@
               </div>
               <!-- closed card 8 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Fish">
               <!-- card 9-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/fish/salmon.jpg"
                   class="card-img-top"
                   alt="Salmon"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Salmon</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -410,15 +431,16 @@
               </div>
               <!-- closed card 9 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Pizza">
               <!-- card 10-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/Pizza/hamruccola.jpg"
                   class="card-img-top"
                   alt="Ham and Ruccola Pizza"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Ham and Ruccola Pizza</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -427,15 +449,16 @@
               </div>
               <!-- closed card 10 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Fish">
               <!-- card 11-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/fish/fishsoup4.jpg"
                   class="card-img-top"
                   alt="Fish Soup"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Fish Soup</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -444,15 +467,16 @@
               </div>
               <!-- closed card 11 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Salad">
               <!-- card 12-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto">
                 <img
                   src="images/salad/nicosie_.jpg"
                   class="card-img-top"
                   alt="Nicosie Salad"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Nicosie Salad</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -461,15 +485,16 @@
               </div>
               <!-- closed card 12 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Pasta">
               <!-- card 13-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto">
                 <img
                   src="images/pasta/pesto.jpg"
                   class="card-img-top"
                   alt="Pesto Pasta"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Pesto Pasta</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -478,15 +503,16 @@
               </div>
               <!-- closed card 13 -->
             </div>
-            <div class="col col-lg-3">
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Pizza">
               <!-- card 14-->
-              <div class="card" style="width: 18rem">
+              <div class="card recipe-card mx-auto" >
                 <img
                   src="images/Pizza/margherita.jpg"
                   class="card-img-top"
                   alt="Margherita Pizza"
                 />
                 <div class="card-body">
+                  <h5 class="card-title">Margherita</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -495,25 +521,27 @@
               </div>
               <!-- closed card 14 -->
             </div>
-            <div class="col col-lg-3">
-          <!-- card 15->
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/salad/caprese.jpg"
-              class="card-img-top"
-              alt="Caprese Salad"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make
-                up the bulk of the card's content.
-              </p>
+            <div class="col col-md-4 col-sm-6 col-lg-3" data-category="Salad">
+              <!-- card 15 -->
+              <div class="card recipe-card mx-auto" >
+                <img
+                  src="images/salad/caprese.jpg"
+                  class="card-img-top"
+                  alt="Caprese Salad"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Caprese Salad</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <!-- closed card 15 -->
             </div>
-          </div>
-          <!-- closed card 15 -->
-        </div>
-        <!-- close grid crads recipes -->
-
+          </div>  
+        <!-- End card recipes -->
+       
         <!-- Add Recipe Modal -->
         <div
           class="modal fade"

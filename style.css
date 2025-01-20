@@ -32,8 +32,11 @@ body {
     color: white;
     font-weight: bold;
   }
-
-  
+/* 
+  .recipe-card {
+    width: 18rem;
+  }
+   */
  
 
   footer {
