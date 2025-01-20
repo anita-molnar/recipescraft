@@ -41,7 +41,13 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#addRecipe" data-bs-toggle="modal" data-bs-target="#recipeModal">Add Recipe</a>
+              <a
+                class="nav-link"
+                href="#addRecipe"
+                data-bs-toggle="modal"
+                data-bs-target="#recipeModal"
+                >Add Recipe</a
+              >
             </li>
           </ul>
         </div>
@@ -65,174 +71,234 @@
         <!-- Home Section -->
         <div class="container">
           <section id="home" class="py-5">
-       
-        <div
-          id="carouselCaptions"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselCaptions"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselCaptions"
-              data-bs-slide-to="2"
-            ></button>
-          </div>
+            <div
+              id="carouselCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselCaptions"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselCaptions"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
 
-          <div class="carousel-inner">
-            <!-- Welcome Message (1st slide) -->
-            <div class="carousel-item active">
-              <div
-                class="d-flex justify-content-center align-items-center"
-                style="height: 400px; background-color: #dadde0"
-              >
-                <div class="container text-center d-flex align-items-center">
-                  <div class="col-md-6">
-                    <!-- Image in Welcome Message -->
-                    <img
-                      src="images/welcomepics.jpg"
-                      alt="Welcome Image"
-                      class="img-fluid rounded"
-                    />
+              <div class="carousel-inner">
+                <!-- Welcome Message (1st slide) -->
+                <div class="carousel-item active">
+                  <div
+                    class="d-flex justify-content-center align-items-center"
+                    style="height: 400px; background-color: #dadde0"
+                  >
+                    <div
+                      class="container text-center d-flex align-items-center"
+                    >
+                      <div class="col-md-6">
+                        <!-- Image in Welcome Message -->
+                        <img
+                          src="images/welcomepics.jpg"
+                          alt="Welcome Image"
+                          class="img-fluid rounded"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <!-- Welcome Text -->
+                        <h2>Welcome to Recipes Craft!</h2>
+                        <p>
+                          Explore a wide variety of recipes to satisfy your
+                          cravings. Share your culinary creations and discover
+                          new dishes to try at home!
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <!-- Welcome Text -->
-                    <h2>Welcome to Recipes Craft!</h2>
-                    <p>
-                      Explore a wide variety of recipes to satisfy your
-                      cravings. Share your culinary creations and discover new
-                      dishes to try at home!
-                    </p>
+                </div>
+
+                <!-- Other slides -->
+                <div class="carousel-item" style="height: 400px">
+                  <img
+                    src="images/seafoodpasta_resize.jpg"
+                    class="d-block w-100 h-100 object-fit-cover"
+                    alt="Seafood pasta dish "
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Seafood Pasta</h3>
+                    <p>Quick and delicious.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="height: 400px">
+                  <img
+                    src="images/salad_resize.jpg"
+                    class="d-block w-100 h-100 object-fit-cover"
+                    alt="Salad"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Refreshing Salad</h3>
+                    <p>Fresh and light option for lunch.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="height: 400px">
+                  <img
+                    src="images/cake_resize.jpg"
+                    class="d-block w-100 h-100 object-fit-cover"
+                    alt="Cake"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Cake slices</h3>
+                    <p>Sugar free, light and tasty.</p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Other slides -->
-            <div class="carousel-item" style="height: 400px">
-              <img
-                src="images/seafoodpasta_resize.jpg"
-                class="d-block w-100 h-100 object-fit-cover"
-                alt="Seafood pasta dish "
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Seafood Pasta</h3>
-                <p>Quick and delicious.</p>
-              </div>
+              <!-- Carousel buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                id="carouselPrev"
+                data-bs-target="#carouselCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                id="carouselNext"
+                data-bs-target="#carouselCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-item" style="height: 400px">
-              <img
-                src="images/salad_resize.jpg"
-                class="d-block w-100 h-100 object-fit-cover"
-                alt="Salad"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Refreshing Salad</h3>
-                <p>Fresh and light option for lunch.</p>
+          </section>
+
+          <!-- Recipes Section -->
+          <section id="recipes" class="recipes-section">
+            <header class="text-center my-4">
+              <h2>Our Recipes</h2>
+              <p>Explore a variety of delicious dishes by category</p>
+            </header>
+
+            <!-- Horizontal Filter Bar -->
+            <nav class="text-center mb-4">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <button
+                    class="btn btn-outline-dark filter-btn"
+                    data-filter="All"
+                  >
+                    All
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button
+                    class="btn btn-outline-dark filter-btn"
+                    data-filter="Fish"
+                  >
+                    Fish
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button
+                    class="btn btn-outline-dark filter-btn"
+                    data-filter="Pasta"
+                  >
+                    Pasta
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button
+                    class="btn btn-outline-dark filter-btn"
+                    data-filter="Pizza"
+                  >
+                    Pizza
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button
+                    class="btn btn-outline-dark filter-btn"
+                    data-filter="Salad"
+                  >
+                    Salad
+                  </button>
+                </li>
+                <li class="list-inline-item">
+                  <button
+                    class="btn btn-outline-dark filter-btn"
+                    data-filter="Dessert"
+                  >
+                    Dessert
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- grid crads recipes -->
+          <div class="row">
+            <div class="col col-lg-3">
+              <!-- card -->
+              <div class="card" style="width: 18rem">
+                <img
+                  src="images/salad_resize.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
+              <!-- closed card -->
             </div>
-            <div class="carousel-item" style="height: 400px">
-              <img
-                src="images/cake_resize.jpg"
-                class="d-block w-100 h-100 object-fit-cover"
-                alt="Cake"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Cake slices</h3>
-                <p>Sugar free, light and tasty.</p>
+            <div class="col col-lg-3">
+              <!-- card -->
+              <div class="card" style="width: 18rem">
+                <img
+                  src="images/salad_resize.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
+              <!-- closed card -->
             </div>
+            <div class="col col-lg-3">column</div>
+            <div class="col col-lg-3">column</div>
+            <div class="col col-lg-3">column</div>
+            <div class="col col-lg-3">column</div>
+            <div class="col col-lg-3">column</div>
           </div>
-
-          <!-- Carousel buttons -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            id="carouselPrev"
-            data-bs-target="#carouselCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            id="carouselNext"
-            data-bs-target="#carouselCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </section>
-        
-    
-        <!-- Recipes Section -->
-        <section id="recipes" class="recipes-section">
-          <header class="text-center my-4">
-            <h2>Our Recipes</h2>
-            <p>Explore a variety of delicious dishes by category</p>
-          </header>
-        
-          <!-- Horizontal Filter Bar -->
-          <nav class="text-center mb-4">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <button class="btn btn-outline-dark filter-btn" data-filter="All">All</button>
-              </li>
-              <li class="list-inline-item">
-                <button class="btn btn-outline-dark filter-btn" data-filter="Fish">Fish</button>
-              </li>
-              <li class="list-inline-item">
-                <button class="btn btn-outline-dark filter-btn" data-filter="Pasta">Pasta</button>
-              </li>
-              <li class="list-inline-item">
-                <button class="btn btn-outline-dark filter-btn" data-filter="Pizza">Pizza</button>
-              </li>
-              <li class="list-inline-item">
-                <button class="btn btn-outline-dark filter-btn" data-filter="Salad">Salad</button>
-              </li>
-              <li class="list-inline-item">
-                <button class="btn btn-outline-dark filter-btn" data-filter="Dessert">Dessert</button>
-              </li>
-            </ul>
-          </nav>      
-      </section>
-
-
-      <!-- grid crads recipes -->
-      <div class=" container text-center">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-3">
-            <div class="card" style="width: 18rem;">
-              <img src="images/seafoodpasta_resize.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-lg-3">column</div>
-          <div class="col col-lg-3">column</div>
-          <div class="col col-lg-3">column</div>
-          <div class="col col-lg-3">column</div>
-          <div class="col col-lg-3">column</div>
-        </div>
-      </div>
-      <!-- close grid crads recipes -->
+        <!-- close grid crads recipes -->
 
         <!-- Add Recipe Modal -->
         <div
@@ -245,7 +311,6 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Submit Your Recipe</h5>
-               
 
                 <button
                   type="button"
@@ -301,7 +366,6 @@
         </div>
         <!-- end of Add Recipe Modal -->
       </div>
-
     </main>
 
     <!-- Footer -->
